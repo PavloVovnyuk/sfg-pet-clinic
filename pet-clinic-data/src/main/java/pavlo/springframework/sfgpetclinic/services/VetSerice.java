@@ -5,10 +5,6 @@ import pavlo.springframework.sfgpetclinic.model.Vet;
  * * Created by Pavlo 04.03.2021
  * *
  */
-public interface VetSerice {
-    Vet findById(Long id);
+public interface VetSerice extends CrudService<Vet, Long> {
 
-    Vet save(Vet vet);
-
-    <Set> Vet findAll();
 }
