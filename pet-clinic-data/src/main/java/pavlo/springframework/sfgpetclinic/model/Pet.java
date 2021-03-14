@@ -1,5 +1,7 @@
 package pavlo.springframework.sfgpetclinic.model;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.time.LocalDate;
 
 public class Pet extends BaseEntity {
