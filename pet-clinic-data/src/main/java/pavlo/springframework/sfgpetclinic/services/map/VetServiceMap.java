@@ -1,10 +1,14 @@
 package pavlo.springframework.sfgpetclinic.services.map;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 import pavlo.springframework.sfgpetclinic.model.Vet;
 import pavlo.springframework.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

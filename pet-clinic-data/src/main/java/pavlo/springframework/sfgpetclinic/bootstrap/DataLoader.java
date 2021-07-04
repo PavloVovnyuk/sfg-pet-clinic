@@ -6,20 +6,19 @@ import pavlo.springframework.sfgpetclinic.model.Owner;
 import pavlo.springframework.sfgpetclinic.model.Vet;
 import pavlo.springframework.sfgpetclinic.services.OwnerService;
 import pavlo.springframework.sfgpetclinic.services.VetService;
-import pavlo.springframework.sfgpetclinic.services.map.OwnerServiceMap;
-import pavlo.springframework.sfgpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
 
      private final OwnerService ownerService;
-    private final VetService vetService;
+     private final VetService vetService;
 
-        public DataLoader() {
-       ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
+
+
     }
-
 
     @Override
     public void run(String... args) throws Exception {
