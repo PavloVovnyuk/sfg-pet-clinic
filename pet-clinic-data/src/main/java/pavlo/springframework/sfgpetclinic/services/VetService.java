@@ -5,6 +5,6 @@ import pavlo.springframework.sfgpetclinic.model.Vet;
  * * Created by Pavlo 04.03.2021
  * *
  */
-public interface VetSerice extends CrudService<Vet, Long> {
+public interface VetService extends CrudService<Vet, Long> {
 
 }
